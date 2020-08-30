@@ -19,11 +19,12 @@ void loop() {
   // put your main code here, to run repeatedly:
   count=0;
   interrupts();
-  delay(100);
+  delay(200);
   noInterrupts();
-  flow_rate=count/77.5;
+//  flow_rate=count/77.5;
+flow_rate=count;
   volume=volume+(flow_rate*1);
-  Serial.println(String(flow_rate)+"round/100 milli");
+  Serial.println(String(flow_rate)+"round/200 milli");
   Serial.println("total volume =="+String(volume)+"\n");
   if(volume>10){
     volume=0.0;
