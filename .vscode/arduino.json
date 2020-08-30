@@ -2,5 +2,6 @@
     "board": "arduino:avr:nano",
     "configuration": "cpu=atmega328old",
     "port": "COM3",
-    "sketch": "Flow_control.ino"
+    "sketch": "Flow_control.ino",
+    "programmer": "AVR ISP"
 }
