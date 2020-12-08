@@ -73,7 +73,7 @@ int temp=millis()-old_time;
 
   if(temp>50){
     detachInterrupt(0);
-    flow_rate=(count*2.2222)/temp;  // ml/ms     (count*1000.0*1000)/(temp*7.5*60000)
+    flow_rate=(count*2.2)/temp;  // ml/ms     (count*1000.0*1000)/(temp*7.5*60000)
     count=0;
     old_time=millis();
     
